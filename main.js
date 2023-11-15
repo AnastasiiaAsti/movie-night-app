@@ -11,6 +11,7 @@ const pinkEls = document.querySelectorAll('.pink')
 const blueEls = document.querySelectorAll('.blue')
 const greenEls = document.querySelectorAll('.green')
 const yellowEls = document.querySelectorAll('.yellow')
+const barContainer = document.querySelector('.item5')
 
 
 
@@ -49,6 +50,16 @@ function generateIdea(){
     applyClassToElements(yellowEls, 'yellow-on');
 
     fillRecipe(randomIdea);
+    const barsContainer = document.getElementById('bars-container');
+
+    const barCount = 18;
+
+    for (let i = 0; i < barCount; i++) {
+        const bar = document.createElement('div');
+        bar.classList.add('bar');
+        bar.classList.add(`bar-${i % 6 + 1}`);
+        barsContainer.appendChild(bar);
+    }
 }
 
 

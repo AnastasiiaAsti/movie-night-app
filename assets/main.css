@@ -163,12 +163,11 @@ body {
     
     .arrow span {
         display: block;
-        width: 1.5vw;
-        height: 1.5vw;
+        width: 2vw;
+        height: 2vw;
         border-bottom: 5px solid grey;
         border-right: 5px solid grey;
         transform: rotate(45deg);
-        margin: -10px;
         animation: animate 2s infinite;
     }
     
@@ -193,3 +192,98 @@ body {
             transform: rotate(45deg) translate(20px, 20px);
         }
     }
+
+    .bar {
+        position: relative;
+        padding: 2px;
+        margin: 3px;
+        height: 0%;
+        background: #9ad942;
+        width: 2px;
+        animation: fill 5s infinite alternate, colors 5s infinite alternate;
+      }
+      
+      .bar.bar-1 {
+        animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
+      }
+      
+      .bar.bar-2 {
+         animation:  fill-2 5s infinite alternate, colors 5s infinite alternate;
+      }
+      
+      
+      .bar.bar-3 {
+         animation:  fill-3 5s infinite alternate, colors 5s infinite alternate;
+      }
+      
+      
+      .bar.bar-4 {
+         animation:  fill-4 5s infinite alternate, colors 5s infinite alternate;
+      }
+      
+      .bar.bar-5 {
+         animation:  fill-5 5s infinite alternate, colors 5s infinite alternate;
+      }
+      
+      .bar.bar-6 {
+         animation:  fill-6 5s infinite alternate, colors 5s infinite alternate;
+      }
+      
+      
+      
+      @keyframes fill {
+        0%   { height: 0; }
+        33%  { height: 15px;}
+        66%  { height: 5px;}
+        100% { height: 25px; }
+      }
+      
+      @keyframes fill-1 {
+        0%   { height: 0; }
+        33%  { height: 25px;}
+        66%  { height: 10px;}
+        100% { height: 30px; }
+      }
+      
+      @keyframes fill-2 {
+        0%   { height: 0; }
+        33%  { height: 45px;}
+        66%  { height: 35px;}
+        100% { height: 30px; }
+      }
+      
+      @keyframes fill-3 {
+        0%   { height: 0; }
+        33%  { height: 25px;}
+        66%  { height: 10px;}
+        100% { height: 25px; }
+      }
+      
+      @keyframes fill-4 {
+        0%   { height: 0; }
+        33%  { height: 47px;}
+        66%  { height: 15px;}
+        100% { height: 30px; }
+      }
+      
+      @keyframes fill-5 {
+        0%   { height: 0; }
+        33%  { height: 15px;}
+        66%  { height: 5px;}
+        100% { height: 35px; }
+      }
+      
+      
+      @keyframes fill-6 {
+        0%   { height: 0; }
+        33%  { height: 24px;}
+        66%  { height: 11px;}
+        100% { height: 30px; }
+      }
+      
+      @keyframes colors {
+        0% { background-color:#9ad942;}
+        50% { background-color: #9ad942;}
+        100% { background-color: #9ad942;}
+      }
+      
