@@ -9,7 +9,8 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     background:url(/assets/bg.jpg)center center no-repeat;;
     -webkit-background-size: cover;
@@ -25,11 +26,10 @@ body {
 }
 
 .container {
-    position: absolute;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 70vw;
     background-color:rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 20px;
@@ -86,6 +86,13 @@ body {
     .item14 { 
         width: 9%;
      }
+     .item15 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style-type: none; 
+         }
     }
 
     .neon{
@@ -121,4 +128,28 @@ body {
         20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
             opacity: 0.4;
         }
+    }
+
+    .blue-on {
+        background-color:#3ec3ff ;
+        box-shadow: 1px 0px 4px #3ec3ff, 2px 0px 4px #3ec3ff, 3px 0px 4px #3ec3ff, 2px 0px 3px #2a8bc9, 2px 3px 15px #2a8bc9, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #2a8bc9, 40px 0vw 200px #2a8bc9;
+        border: none !important;
+    }
+
+    .green-on {
+        background-color: #9ad942 ;
+        box-shadow: 1px 0px 4px #9ad942, 2px 0px 4px #9ad942, 3px 0px 4px #9ad942, 2px 0px 3px #6e9931, 2px 3px 15px #6e9931, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #6e9931, 40px 0vw 200px #6e9931;
+        border: none !important;
+    }
+
+    .pink-on {
+        background-color: #FFD5FF;
+        box-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+        border: none !important;
+    }
+
+    .yellow-on {
+        background-color: #fff2d5;
+        box-shadow: 1px 0px 4px #fff2d5, 2px 0px 4px #fff2d5, 3px 0px 4px #fff2d5, 2px 0px 3px #d42cca, 2px 3px 15px #d42cca, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #d42cca, 40px 0vw 200px #d42cca;
+        border: none !important;
     }
