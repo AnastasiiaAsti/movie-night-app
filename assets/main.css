@@ -135,12 +135,15 @@ body {
         background-color:#3ec3ff ;
         box-shadow: 1px 0px 4px #3ec3ff, 2px 0px 4px #3ec3ff, 3px 0px 4px #3ec3ff, 2px 0px 3px #2a8bc9, 2px 3px 15px #2a8bc9, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #2a8bc9, 40px 0vw 200px #2a8bc9;
         border: none !important;
+        animation: flicker 15s linear infinite;
+
     }
 
     .green-on {
         background-color: #9ad942 ;
         box-shadow: 1px 0px 4px #9ad942, 2px 0px 4px #9ad942, 3px 0px 4px #9ad942, 2px 0px 3px #6e9931, 2px 3px 15px #6e9931, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #6e9931, 40px 0vw 200px #6e9931;
         border: none !important;
+        animation: flicker 8s linear infinite;
     }
 
     .pink-on {
