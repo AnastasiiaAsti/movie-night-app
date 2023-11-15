@@ -19,6 +19,10 @@ body {
     color: grey;
 }
 
+#btn:hover {
+    background-color: grey;
+    color: black;
+}
 
 .container {
     position: absolute;
