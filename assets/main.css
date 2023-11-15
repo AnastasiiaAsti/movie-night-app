@@ -290,3 +290,9 @@ body {
         100% { background-color: #9ad942;}
       }
       
+
+      @media screen and (max-width: 780px) {
+        .container {
+            width: 90vw;
+            }
+      }
