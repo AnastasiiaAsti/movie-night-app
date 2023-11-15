@@ -11,7 +11,8 @@ const pinkEls = document.querySelectorAll('.pink')
 const blueEls = document.querySelectorAll('.blue')
 const greenEls = document.querySelectorAll('.green')
 const yellowEls = document.querySelectorAll('.yellow')
-const barContainer = document.querySelector('.item5')
+const barsContainer = document.getElementById('bars-container');
+
 
 
 
@@ -35,6 +36,7 @@ function applyClassToElements(elements, className) {
 }
 
 function generateIdea(){
+    barsContainer.innerHTML = '';
     const randomIndex = Math.floor(Math.random() * movieIdeas.length);
     const randomIdea = movieIdeas[randomIndex];
     
@@ -50,7 +52,6 @@ function generateIdea(){
     applyClassToElements(yellowEls, 'yellow-on');
 
     fillRecipe(randomIdea);
-    const barsContainer = document.getElementById('bars-container');
 
     const barCount = 18;
 
