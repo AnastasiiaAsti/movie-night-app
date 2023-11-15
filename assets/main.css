@@ -92,6 +92,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         list-style-type: none; 
+        color: #9ad942;
          }
     }
 
@@ -152,4 +153,43 @@ body {
         background-color: #fff2d5;
         box-shadow: 1px 0px 4px #fff2d5, 2px 0px 4px #fff2d5, 3px 0px 4px #fff2d5, 2px 0px 3px #d42cca, 2px 3px 15px #d42cca, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #d42cca, 40px 0vw 200px #d42cca;
         border: none !important;
+    }
+
+    .arrow {
+        transform: translate(-50%, -50%);
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+    
+    .arrow span {
+        display: block;
+        width: 1.5vw;
+        height: 1.5vw;
+        border-bottom: 5px solid grey;
+        border-right: 5px solid grey;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+    
+    .arrow span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+    
+    .arrow span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+    
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px, -20px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(20px, 20px);
+        }
     }
